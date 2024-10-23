@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mølland sitt bryllup</title>
-    </head>
-    <body>
-        <h1>To be announced!</h1>
-        <h2> Noe mer</h2>
-    </body>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venninnens Bryllup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Velkommen til [Venninnens Navn] og [Brudgommens Navn] sitt bryllup!</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Bryllupsinfo</a></li>
+                <li><a href="#rsvp">Svar på Invitasjon</a></li>
+                <li><a href="#allergener">Allergener</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seksjon for bryllupsinformasjon -->
+    <section id="info">
+        <h2>Bryllupsdetaljer</h2>
+        <p>Dato: 12. juni 2025</p>
+        <p>Sted: [Stedets Navn]</p>
+        <p>Klokkeslett: 14:00</p>
+        <p>Vi gleder oss til å feire den store dagen med deg!</p>
+    </section>
+
+    <!-- Seksjon for invitasjonssvar (RSVP) -->
+    <section id="rsvp">
+        <h2>Svar på Invitasjon</h2>
+        <form id="rsvpForm">
+            <label for="navn">Navn:</label>
+            <input type="text" id="navn" name="navn" required>
+            <label for="antall">Antall gjester:</label>
+            <input type="number" id="antall" name="antall" min="1" max="10" required>
+            <label for="kommer">Kommer du?</label>
+            <select id="kommer" name="kommer" required>
+                <option value="ja">Ja</option>
+                <option value="nei">Nei</option>
+            </select>
+            <button type="submit">Send svar</button>
+        </form>
+        <div id="rsvpResponse"></div>
+    </section>
+
+    <!-- Seksjon for allergener -->
+    <section id="allergener">
+        <h2>Allergener</h2>
+        <p>Har du noen allergier eller matpreferanser? Gi oss beskjed nedenfor!</p>
+        <form id="allergiForm">
+            <label for="allergier">Allergier/matpreferanser:</label>
+            <textarea id="allergier" name="allergier" rows="4"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Venninnens Navn] og [Brudgommens Navn]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
