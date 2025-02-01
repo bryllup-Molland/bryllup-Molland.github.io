@@ -4,38 +4,51 @@
     <meta charset="UTF-8">
     <title>RSVP</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Allerta&family=Abel&display=swap" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
-    <script src="firebase-config.js"></script> <!-- Legg til denne linjen for å inkludere firebase-config.js -->
+    <script src="firebase-config.js"></script> <!-- Firebase-konfigurasjonen -->
     <script src="rsvp.js"></script> <!-- Din rsvp.js-fil -->
 </head>
 <body>
-
-<header id="header"></header>
-
+<header>
+<nav>
+    <a href="index.html" class="logo">Maria & Christoffer</a>
+    <ul>
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="sted.html">STED OG DATO</a></li>
+        <li><a href="gaver.html">GAVER</a></li>
+        <li><a href="RSVP.html" class="highlight">RSVP</a></li>
+    </ul>
+</nav>
+</header>
 <main>
     <h1>Vennligst svar</h1>
-    <p class="deadline">* innen 01.03.2025 *</p>
+    <p class="deadline">innen 15.03.2025 </p>
 
     <form id="rsvpForm">
         <label for="navn">Navn:</label>
         <input type="text" id="navn" name="navn" required>
 
-        <label>Kommer du?</label>
-        <input type="radio" id="ja" name="kommer" value="ja" required> Ja
-        <input type="radio" id="nei" name="kommer" value="nei"> Nei
+        <label>Kommer du:</label>
+        <div class="radio-group">
+            <label><input type="radio" id="ja" name="kommer" value="ja" required> Ja</label>
+            <label><input type="radio" id="nei" name="kommer" value="nei"> Nei</label>
+        </div>
 
-        <label for="allergier">Allergier eller annet:</label>
+        <label for="allergier">Allergier eller annen informasjon:</label>
         <textarea id="allergier" name="allergier" rows="4"></textarea>
 
         <button type="submit">Send inn skjema</button>
     </form>
 </main>
 
-<footer id="footer"></footer>
+<footer>
+    <p>Maria & Christoffer 2025</p>
+    <p>Designet med kjærlighet ❤️</p>
+</footer>
 
-<script src="global.js"></script>
-<script src="rsvp.js"></script>
+<script src="global.js"></script> <!-- Dette er ditt eget globale script -->
 </body>
 </html>

@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+    if (!window.firebase) {
+        console.error("Firebase is not loaded properly!");
+        return;
+    }
+
     const form = document.getElementById("rsvpForm");
 
     form.addEventListener("submit", function(event) {
