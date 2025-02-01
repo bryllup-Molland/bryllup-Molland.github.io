@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Allerta&family=Abel&display=swap" rel="stylesheet">
 
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
-    <script src="firebase-config.js"></script> <!-- Firebase-konfigurasjonen -->
-    <script src="rsvp.js"></script> <!-- Din rsvp.js-fil -->
+    <script type="module"></script>
+    <script src="rsvp.js" type="module"></script> <!-- Din rsvp.js-fil -->
 </head>
 <body>
 <header>
@@ -40,6 +38,7 @@
         <label for="allergier">Allergier eller annen informasjon:</label>
         <textarea id="allergier" name="allergier" rows="4"></textarea>
 
+        <p id="RSVP-response"></p>
         <button type="submit">Send inn skjema</button>
     </form>
 </main>
