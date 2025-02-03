@@ -257,7 +257,7 @@
     .radio-group label {
         display: flex; /* Align radio button and text horizontally */
         align-items: center; /* Center radio button and text vertically */
-        /*gap: 0px; /* Space between radio button and text */
+        /* gap: 0px; /* Space between radio button and text */
         margin: 0; /* Remove default margins */
     }
 
